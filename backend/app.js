@@ -4,6 +4,7 @@ import authRoutes  from "./routes/authRoutes.js";
 import menuRoutes  from "./routes/menuRoutes.js";
 import tableRoutes from "./routes/tableRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
+import billRoutes from "./routes/billRoutes.js"
 
 const app = express();
 app.use(cors());
@@ -13,5 +14,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/menu', menuRoutes);
 app.use('/api/table', tableRoutes);
 app.use('/api/order', orderRoutes);
+app.use('/api/bill', billRoutes)
 
 export default app;
